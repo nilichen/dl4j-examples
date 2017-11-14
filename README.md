@@ -23,9 +23,13 @@ Skymind SFU Coding Exercise
 $ sudo wget \
         --no-cookies --header "Cookie: gpw_e24=xxx; oraclelicense=accept-securebackup-cookie;" \
         "http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.rpm"
-$ sudo rpm -i jdk-${java_version}-linux-x64.rpm
+$ sudo rpm -i jdk-8u151-linux-x64.rpm
 $ sudo /usr/sbin/alternatives --config java
 $ sudo /usr/sbin/alternatives --config javac
+```
+Add the export of the java home to .bash_profile `export JAVA_HOME=/usr/java/default`  
+```
+$ source ~/.bash_profile
 ```
 - Install Maven.
 ```
@@ -36,7 +40,7 @@ $ sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
 $ sudo yum install -y apache-maven
 $ mvn --version
 ```
-- In general follow the [Quick Start Guide](https://deeplearning4j.org/quickstart) and [Using the Command Line on AWS](https://deeplearning4j.org/gettingstarted#advanced-using-the-command-line-on-aws) with mina changes
+- In general follow the [Quick Start Guide](https://deeplearning4j.org/quickstart) and [Using the Command Line on AWS](https://deeplearning4j.org/gettingstarted#advanced-using-the-command-line-on-aws) with minor changes
 ```
 $ git clone https://github.com/nilichen/dl4j-examples.git  
 $ cd dl4j-examples
