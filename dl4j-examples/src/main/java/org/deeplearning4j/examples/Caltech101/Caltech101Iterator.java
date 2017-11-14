@@ -21,25 +21,24 @@ import java.util.Random;
 
 /**
  * Automatically downloads the dataset from
- * http://download.tensorflow.org/example_images/flower_photos.tgz
+ * http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz
  * and untar's it to the users home directory
- * @author susaneraly on 3/9/17.
  */
 public class Caltech101Iterator {
     private static final Logger log = org.slf4j.LoggerFactory.getLogger(Caltech101Iterator.class);
 
-    private static final String DATA_DIR = FilenameUtils.concat(System.getProperty("user.dir"), "src/main/resources/");
+    private static final String DATA_DIR = FilenameUtils.concat(System.getProperty("user.dir"), "dl4j-examples/src/main/resources/");
     private static final String DATA_URL = "http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz";
     private static final String CALTECH101_DIR = DATA_DIR + "/101_ObjectCategories";
 
     private static final String [] allowedExtensions = BaseImageLoader.ALLOWED_FORMATS;
     private static final Random rng  = new Random(13);
 
-    private static int height = 224;
-    private static int width = 224;
-    private static int channels = 3;
-    private static int numExamples = 9146;
-    private static int numLabels = 101;
+    private static final int height = 224;
+    private static final int width = 224;
+    private static final int channels = 3;
+    private static final int numExamples = 9146;
+    private static final int numLabels = 101;
 
     private static ParentPathLabelGenerator labelMaker = new ParentPathLabelGenerator();
     private static InputSplit trainData,testData;
