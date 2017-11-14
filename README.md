@@ -2,9 +2,9 @@ Skymind SFU Coding Exercise
 =========================
 [See Details](https://www.zepl.com/viewer/notebooks/bm90ZTovL2Nyb2NrcG90dmVnZ2llcy9hZjAyZmEzOTk3M2Y0NmRhODFhM2Y0OGMzNmU0OTI5NC9ub3RlLmpzb24)
 - Implementated as Caltech101 in dl4j-examples  
-![dl4j-caltech101](images/dl4j-caltech101.png)
+![dl4j-caltech101](https://github.com/nilichen/dl4j-examples/blob/master/dl4j-examples/src/main/resources/readme_images/dl4j-caltech101.png)
 - Applied transfer learning with VGG-16, modifying only the last layer, keeping other frozen. See https://deeplearning4j.org/transfer-learning and https://deeplearning4j.org/build_vgg_webapp.     
-![scores](images/score.png)
+![scores](https://github.com/nilichen/dl4j-examples/blob/master/dl4j-examples/src/main/resources/readme_images/score.png)
 
 ---
 
@@ -12,7 +12,7 @@ Skymind SFU Coding Exercise
 **Run locally**
 - `$ git clone https://github.com/nilichen/dl4j-examples.git` and follow deeplearning4j [Quick Start Guide](https://deeplearning4j.org/quickstart)
 - For batchsize of 16 on MacBook Pro with 16GB memory, need to configure VM parameters in IntelliJ as follows, see https://deeplearning4j.org/benchmark
-![VM-config](images/VM-config.png)
+![VM-config](https://github.com/nilichen/dl4j-examples/blob/master/dl4j-examples/src/main/resources/readme_images/VM-config.png)
 
 
 **Run on AWS with CUDA**
